@@ -149,7 +149,7 @@ export const projects = [
 export const testimonials = [
   {
     quote:
-      "I had the pleasure of collaborating with Aman on two projects, Aggregate and RJ Snack. Their expertise as a web developer stood out from day one. Aman brought incredible technical skills to the table, especially in Reactjs and javascript, and their ability to solve complex problems ensured the success of both projects.he is not only a skilled developer but also a great team player and an excellent teacher from whom I have learned many things and will continue to learn.",
+      "I had the pleasure of collaborating with Aman on two projects, Aggregate and RJ Snack. His expertise as a web developer stood out from day one. Aman brought incredible technical skills to the table, especially in Reactjs and javascript, and their ability to solve complex problems ensured the success of both projects.he is not only a skilled developer but also a great team player and an excellent teacher from whom I have learned many things and will continue to learn.",
     name: "Sanskruti Mansoriya",
     image:sanskruti,
     title: "TCS",
