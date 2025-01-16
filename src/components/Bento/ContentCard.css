@@ -1,0 +1,36 @@
+.custom-button {
+  background-color: #9ee406;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  align-items: center;
+  text-align: center;
+  gap: 2px;
+  
+  }
+
+  svg{
+    height: 16px;
+    width: 16px;
+  }
+  .buttonBody{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    margin-top: 40px;
+  }
+  
+  .custom-button:hover {
+  transform: scale(1.05);
+  background-color: #7caf02;
+  }
+
+  .MH{
+    color: white;
+    text-align: center;
+  }

@@ -1,0 +1,27 @@
+.head{
+  margin-top:  10px;
+}
+
+
+
+/* @media (max-width: 768px) {
+  .head{
+    display: flex;
+    justify-content: center;
+  }
+
+
+  
+} */
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  
+
+  .head{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+}

@@ -1,0 +1,126 @@
+/* General container styles */
+.about-container {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.about-description{
+  font-size: 17px !important;
+}
+.about-text-container h1{
+  font-size: 60px;
+}
+
+@media (min-width: 1024px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+/* Image container */
+.about-image-container {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .about-image-container {
+    margin-bottom: 0;
+  }
+}
+
+/* Image styles */
+.about-image {
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 15rem; /* Small screens */
+  height: auto;
+}
+
+@media (min-width: 640px) {
+  .about-image {
+    max-width: 20rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .about-image {
+    max-width: 25rem;
+  }
+}
+
+/* Text container */
+.about-text-container {
+  text-align: center;
+
+}
+
+@media (min-width: 1024px) {
+  .about-text-container {
+    text-align: left;
+    margin-left: 2.5rem;
+    flex-basis: 50%;
+  }
+}
+
+/* Heading styles */
+.about-heading {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  color: white; /* Ensure white text matches the body */
+}
+
+@media (min-width: 640px) {
+  .about-heading {
+    font-size: 1.5rem;
+  }
+  
+}
+
+/* Highlighted span */
+.highlight {
+  color: #9ee406;
+  ; /* Purple color */
+  margin-left: 0.5rem;
+}
+
+/* Paragraph styles */
+.about-description {
+  font-size: 0.875rem;
+  color: white; /* Text inherits body color but explicitly added for clarity */
+}
+
+@media (max-width: 912px) {
+  .about-description {
+    font-size: 1rem;
+  }
+  .about-text-container h1{
+    font-size: 30px;
+  }
+
+  .about-heading{
+    dipslay: flex;
+    justify-content: center;
+  }
+  
+}
+@media(max-width: 480px){
+
+  .about-heading {
+    display: flex;
+    justify-content: center;
+  }
+  .about-text-container h1{
+    font-size: 30px ;
+  }
+
+  .about-description{
+    width: 350px;
+  }
+
+}

@@ -1,0 +1,173 @@
+
+.profile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem ,0;
+  margin-top: 90px;
+  margin-left: 90px;
+
+}
+
+.cards {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+
+/* Hero Section */
+.hero-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin-bottom: 2rem;
+margin-top: 2rem;
+padding: 2rem;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+color: #ffffff; /* Dark text for contrast */
+width: 90%;
+max-width: 50%;
+}
+
+.intro-text {
+font-size: 1rem;
+font-weight: bold;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+margin-bottom: 1rem;
+}
+
+.typing-text {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid rgb(158, 228, 6); /* Initial border-right color */
+  animation: blinking-border 0.8s step-end infinite; /* Animation for blinking */
+}
+
+/* Keyframes for the blinking effect */
+@keyframes blinking-border {
+  0%, 100% {
+    border-right-color: transparent; /* Make the border disappear */
+  }
+  50% {
+    border-right-color: #9ee406; /* Border is visible */
+  }
+}
+
+.subheadline {
+font-size: 1.2rem;
+margin-bottom: 1.5rem;
+color: #d6d7d5;
+}
+
+/* Download Resume Button */
+.custom-button {
+background-color: #9ee406;
+border: none;
+color: #000000;
+font-size: 1rem;
+font-weight: bold;
+padding: 0.75rem 1.5rem;
+border-radius: 5px;
+cursor: pointer;
+transition: transform 0.2s, background-color 0.3s;
+}
+
+.custom-button:hover {
+transform: scale(1.05);
+background-color: #7caf02;
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+    
+  }
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+  }
+
+
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .typing-text {
+    font-size: 1.5rem;
+  }
+
+  .subheadline {
+    font-size: 1rem;
+  }
+
+  .cards {
+
+    width: 200px;
+    height: 180px;
+    margin-right: 80px !important;
+  }
+
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px !important;
+    margin-top: 20px;
+    
+  }
+
+  .cards{
+    
+    gap: 5px;
+  }
+  .intro-text {
+    font-size: 0.9rem;
+  }
+
+  .typing-text {
+    font-size: 1.2rem;
+  }
+
+  .subheadline {
+    font-size: 0.9rem;
+  }
+
+  .custom-button {
+    font-size: 0.8rem;
+    
+  }
+
+  .profile{
+    
+    align-items: center;
+  }
+
+  
+
+  
+}

@@ -1,0 +1,277 @@
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 120px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.cards-container h1{
+  margin-bottom: 90px;
+  font-size: 60px;
+}
+/* 
+.card-container {
+  width: 130px;
+  height: 170px;
+  border-radius: 20px;
+  background: #000000;
+  box-shadow: -1px -1px 5px rgb(158, 228, 6);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 20px #9ee406;
+}
+
+
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.card-container:hover .card-image {
+  filter: blur(5px);
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+  border-radius: 20px;
+}
+
+.card-container:hover .overlay {
+  opacity: 1;
+}
+
+.image-name {
+  color: #9ee406;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .cards-container {
+    justify-content: space-evenly;
+  }
+
+  .card-container {
+    width: 110px;
+    height: 150px;
+  }
+
+  .image-name {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    width: 100px;
+    height: 130px;
+  }
+
+  .image-name {
+    font-size: 0.8rem;
+  }
+} */
+
+
+/* From Uiverse.io by JohnnyCSilva */ 
+.cardd {
+  width: 195px;
+  height: 285px;
+  background: #313131;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: 0.2s ease-in-out;
+}
+
+.img {
+  height: 10%;
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.textBox {
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  transition: 0.2s ease-in-out;
+  z-index: 2;
+}
+
+.textBox > .text {
+  font-weight: bold;
+}
+
+.textBox > .head {
+  font-size: 20px;
+}
+
+.textBox > .price {
+  font-size: 17px;
+}
+
+.textBox > span {
+  font-size: 12px;
+  color: lightgrey;
+}
+
+.cardd:hover > .textBox {
+  opacity: 1;
+}
+
+.cardd:hover > .img {
+  height: 40%;
+  filter: blur(7px);
+  
+}
+
+
+.cardd:hover {
+  transform: scale(1.04) rotate(0deg);
+}
+
+
+/* Existing CSS remains unchanged */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+  .img{
+    height: 5%;
+  }
+  .cardd {
+    width: 180px;
+    height: 260px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+  .cards-container {
+    margin-left: 0px;
+  }
+
+  .cardd {
+    width: 160px;
+    height: 240px;
+  }
+
+  .cardd:hover > .img {
+    height: 15%;
+    filter: blur(7px);
+  }
+  .img{
+    height: 5vh; /* Adjust image size dynamically */
+    width: auto; /* Center the image */
+    margin: auto; /* Center horizontally */
+    border-radius: 10px;
+    
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); /* Dynamic card width */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .cardd {
+    width: 100%; /* Take the full width of the grid column */
+    height: 10vh; /* Allow height to adjust dynamically based on content */
+    aspect-ratio: 3 / 4; /* Maintain a consistent card aspect ratio */
+  }
+
+  
+  .img {
+    height: 5vh; /* Adjust image size dynamically */
+    width: auto; /* Center the image */
+    margin: auto; /* Center horizontally */
+    border-radius: 10px; /* Add rounded corners for better aesthetics */
+  }
+
+  
+
+  .cards-container h1 {
+    font-size: 30px; /* Slightly smaller font size for the title */
+    text-align: center; /* Center the title for small screens */
+    margin-bottom:30px;
+  }
+}
+
+
