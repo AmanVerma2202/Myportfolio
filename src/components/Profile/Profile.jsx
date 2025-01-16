@@ -16,7 +16,7 @@ const Profile = () => {
           <ReactTyped className="typing-text" strings={["Hi! I'm Aman Verma"]} typeSpeed={100} showCursor={false} />
           
           
-          <p className="subheadline">Full Stack Web Developer (DevOps)</p>
+          <p className="subheadline">Upcoming SE at Infosys  |  Full Stack Web Developer (DevOps)</p>
         <a href={resume} download="AmanVerma.pdf">
           <button className="custom-button">
             Download Resume
