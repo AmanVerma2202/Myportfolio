@@ -286,7 +286,7 @@ export const workExperience = [
     thumbnail: exp1,
   },
   {
-    id: 2,̀
+    id: 2,
     title: "Full Stack Developer - Freelance",
     desc: "Designed and developed Nagercoil chips for client using Reactjs, MongoDB, Express, NodeJs.",
     className: "md:col-span-2", // change to md:col-span-2
