@@ -280,13 +280,13 @@ export const skill = [
 export const workExperience = [
   {
     id: 1,
-    title: "Python Developer",
-    desc: "Pioneered a solution that analyzes PDFs with PyMuPDF and Tesseract, highlights text mismatches, and enables correct annotated PDF downloads.",
+    title: "MERN Stack Intern",
+    desc: "Designed the frontend of a book inventory system for Concepts Library, enabling 200+ users to explore and borrow books effortlessly.",
     className: "md:col-span-2",
     thumbnail: exp1,
   },
   {
-    id: 2,
+    id: 2,̀
     title: "Full Stack Developer - Freelance",
     desc: "Designed and developed Nagercoil chips for client using Reactjs, MongoDB, Express, NodeJs.",
     className: "md:col-span-2", // change to md:col-span-2
