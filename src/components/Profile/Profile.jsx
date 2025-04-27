@@ -4,7 +4,7 @@ import "./Profile.css"
 import code from "../../Image/code2.jpeg"
 import { ReactTyped } from 'react-typed';
 
-import resume from "../../Image/VermaAman.pdf"
+import resume from "../../Image/VermaAman__Vell_.pdf"
 
 const Profile = () => {
   
