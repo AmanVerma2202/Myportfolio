@@ -7,8 +7,9 @@ const Skills = () => {
   return (
     <div className="cards-container">
       <h1>
-        My <span style={{ color: "#9ee406" }}>Skills</span>
+        Skills I <span style={{ color: "#9ee406" }}>Use</span>
       </h1>
+      <p className="skills-intro">Full-stack engineering, AI/ML tooling, and deployment skills I use to ship reliable products and automation workflows.</p>
       <div className="skills-grid">
         {skill.map((card, index) => (
           <div className="cardd" key={index}>

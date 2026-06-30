@@ -1,56 +1,106 @@
 import React from "react";
+import {
+  FiActivity,
+  FiBriefcase,
+  FiCpu,
+  FiMapPin,
+  FiTarget,
+  FiTrendingUp,
+} from "react-icons/fi";
 import "./BentoGrid.css";
-import code from "../../Image/code2.jpeg";
 import { Earth } from "./Earth";
-import {ContentCard} from "./ContentCard";
-import b1 from "../../Image/b1.jpg"
-import b5 from "../../Image/b5.jpg"
-import techstack from "../../Image/b6.jpg"
-import b8 from "../../Image/b8.jpg"
-
+import { ContentCard } from "./ContentCard";
+import b1 from "../../Image/b1.jpg";
+import b5 from "../../Image/b5.jpg";
+import techstack from "../../Image/b6.jpg";
+import b8 from "../../Image/b8.jpg";
 
 const BentoGrid = () => {
-  const items = [
-    { id: 1, content: "I value teamwork and emphasize transparent communication to achieve shared goals.", type: "large", image: `${b1}`, hasText: true ,name: false},
-    { id: 2, content: "Flexible Communication", type: "medium", image: null, hasText: false,name: false },
-    { id: 3, smallContent:"Insider",content: "Currently working on RJ&Snacks and open source", type: "medium", image: `${b5}`, hasText: false, name: false },
-    { id: 4, content: "A tech-savvy individual with a strong enthusiasm for development", type: "small", image: `${b8}`, hasText: true,name: false },
-    { id: 5, content: <Earth />, type: "small", image: null, hasText: true, name: true},
-    { id: 6, content: <ContentCard />, type: "small", image: null, hasText: true,name: false },
-    { id: 7, smallContent:"",content: "", type: "small", image: `${techstack}`, hasText: true,name: false }
+  const cards = [
+    {
+      area: "identity",
+      kicker: "Current Role",
+      title: "Infosys software engineer building AI automation for enterprise workflows.",
+      body: "I combine full-stack product delivery with Python, ML tooling, and automation thinking so teams can move faster with cleaner systems.",
+      image: b1,
+      icon: <FiBriefcase />,
+      stats: ["Full-time", "AI automation", "Product engineering"],
+    },
+    {
+      area: "stack",
+      kicker: "Technical Edge",
+      title: "Full-stack plus practical AI/ML.",
+      body: "React, Next.js, Node.js, Express, MongoDB, PostgreSQL, Python, PyTorch, NumPy, Pandas, Matplotlib, and Seaborn.",
+      image: b5,
+      icon: <FiCpu />,
+    },
+    {
+      area: "market",
+      kicker: "Availability",
+      title: "Remote first. Ready for Noida, Delhi, Gurugram, and selective freelance work.",
+      icon: <FiMapPin />,
+    },
+    {
+      area: "proof",
+      kicker: "Execution Proof",
+      title: "600+ DSA problems, shipped product modules, and measurable performance improvements.",
+      body: "Strong fundamentals, clear APIs, faster frontends, and user-facing polish.",
+      image: b8,
+      icon: <FiTrendingUp />,
+      stats: ["600+ DSA", "35-40% faster", "5+ modules"],
+    },
+    {
+      area: "focus",
+      kicker: "Best Fit",
+      title: "AI-enabled SaaS, dashboards, internal tools, e-commerce, and automation-heavy platforms.",
+      image: techstack,
+      icon: <FiTarget />,
+    },
+    {
+      area: "signal",
+      kicker: "Working Style",
+      title: "Senior-minded delivery: clarify the business problem, ship the core, measure, then refine.",
+      icon: <FiActivity />,
+    },
   ];
 
   return (
-    <div className="bento-grid">
-      {items.map((item) => (
-        <div
-          key={item.id}
-          className={`bento-item ${item.type} `}
-          style={{
-            backgroundImage: item.image ? `url(${item.image})` : "",
-          }}
+    <section className="bento-section" aria-label="Professional snapshot">
+      <div className="bento-heading">
+        <p>Executive Snapshot</p>
+        <h2>Built for teams that need speed, clarity, and AI-ready engineering.</h2>
+      </div>
 
-          
-        >
-          {item.hasText && item.name ? (
-            <div className="image-black">
-              {typeof item.content === "string" ? <h2>{item.content}</h2> : item.content}
+      <div className="bento-grid">
+        {cards.map((card) => (
+          <article
+            key={card.area}
+            className={`bento-item bento-${card.area} ${card.image ? "has-image" : "no-image"}`}
+            style={card.image ? { backgroundImage: `url(${card.image})` } : undefined}
+          >
+            <div className="bento-content">
+              <span className="bento-icon" aria-hidden="true">{card.icon}</span>
+              <p className="bento-kicker">{card.kicker}</p>
+              <h3>{card.title}</h3>
+              {card.body ? <p className="bento-body">{card.body}</p> : null}
+              {card.stats ? (
+                <div className="bento-stats" aria-label={`${card.kicker} proof points`}>
+                  {card.stats.map((stat) => <span key={stat}>{stat}</span>)}
+                </div>
+              ) : null}
             </div>
-            
-          ):("")}
-          {item.hasText && !item.image ? (
-            <div className="text-only">
-              {typeof item.content === "string" ? <h2>{item.content}</h2> : item.content}
-            </div>
-          ) : (
-            <div className="overlay">
-              {typeof item.smallContent === "string" ? <p className="pe">{item.smallContent}</p> : item.smallContent}
-              {typeof item.content === "string" ? <h2>{item.content}</h2> : item.content}
-            </div>
-          )}
-        </div>
-      ))}
-    </div>
+          </article>
+        ))}
+
+        <article className="bento-item bento-earth" aria-label="Remote collaboration">
+          <Earth />
+        </article>
+
+        <article className="bento-item bento-contact" aria-label="Contact Aman">
+          <ContentCard />
+        </article>
+      </div>
+    </section>
   );
 };
 

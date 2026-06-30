@@ -1,36 +1,66 @@
-.custom-button {
-  background-color: #9ee406;
-  border: none;
-  color: black;
-  font-size: 0.8rem;
-  font-weight: bold;
-  
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.2s, background-color 0.3s;
+.buttonBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  padding: clamp(1rem, 2vw, 1.35rem);
+  text-align: left;
+}
+
+.content-card-kicker {
+  margin: 0 0 0.55rem;
+  color: var(--page-accent);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.MH {
+  max-width: 20rem;
+  margin: 0;
+  color: var(--page-text);
+  font-size: 1.55rem;
+  line-height: 1.12;
+  text-align: left;
+}
+
+.copy-email-button {
+  display: inline-flex;
   align-items: center;
-  text-align: center;
-  gap: 2px;
-  
-  }
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  max-width: 100%;
+  min-height: 2.75rem;
+  margin-top: 1.2rem;
+  padding: 0.72rem 0.92rem;
+  border: 1px solid var(--page-chip-border);
+  border-radius: 8px;
+  background: var(--page-accent);
+  color: var(--page-bg);
+  font-size: 0.85rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 180ms ease, filter 180ms ease;
+}
 
-  svg{
-    height: 16px;
-    width: 16px;
-  }
-  .buttonBody{
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    margin-top: 40px;
-  }
-  
-  .custom-button:hover {
-  transform: scale(1.05);
-  background-color: #7caf02;
-  }
+.copy-email-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(0.95);
+}
 
-  .MH{
-    color: white;
-    text-align: center;
+.copy-email-button svg {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 auto;
+}
+
+.copy-email-button span {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .copy-email-button {
+    width: 100%;
   }
+}

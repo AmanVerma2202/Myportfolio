@@ -13,13 +13,19 @@ const About = () => {
       </div>
       <div className="about-text-container">
         <h1 className="about-heading">
-          My<span className="highlight"> Story</span>
+          About<span className="highlight"> Me</span>
         </h1>
         <p className="about-description">
-          Born and raised in Barabanki, Uttar Pradesh, I am pursuing my
-          Engineering Degree in Computer Science and Engineering from Vellore
-          Institute of Technology, Bhopal. Started my career as a Full Stack
-          Developer finally working on DevOps.
+          I am a full-time Software Engineer at Infosys working in AI and automation, with a
+          full-stack foundation across React, Next.js, Node.js, Express, MongoDB, PostgreSQL,
+          and modern deployment workflows. My work sits at the intersection of product
+          engineering, clean user experience, and practical machine learning.
+        </p>
+        <p className="about-description">
+          I am expanding deeper into AI/ML with Python, NumPy, Pandas, Matplotlib, Seaborn,
+          and PyTorch while continuing to ship real applications for clients and product ideas.
+          I am available for high-impact remote roles, Noida, Delhi, Gurugram opportunities,
+          and focused freelance builds.
         </p>
       </div>
     </div>

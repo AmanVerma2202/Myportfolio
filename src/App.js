@@ -11,7 +11,6 @@ import Education from './components/Education/Education';
 import Experience from './components/Experience/Experience';
 import Footer from './components/Footer/Footer';
 import Projects from "./components/ProjectCard/Projects";
-import { Earth } from './components/Bento/Earth';
 import MyApproaches from './components/MyApproaches/MyApproaches';
 
 

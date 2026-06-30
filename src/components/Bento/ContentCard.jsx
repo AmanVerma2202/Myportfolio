@@ -16,8 +16,9 @@ export const ContentCard = () => {
 
   return (
     <div className="buttonBody">
-      <h2 className="MH">Want to team up on a project?</h2>
-      <button className="custom-button" onClick={handleCopyEmail}>
+      <p className="content-card-kicker">Direct Contact</p>
+      <h2 className="MH">Need a reliable builder for an AI or full-stack product?</h2>
+      <button className="copy-email-button" onClick={handleCopyEmail}>
         <svg
           version="1.1"
           id="Layer_1"
@@ -39,7 +40,7 @@ export const ContentCard = () => {
             />
           </g>
         </svg>
-        {buttonText}
+        <span>{buttonText}</span>
       </button>
     </div>
   );

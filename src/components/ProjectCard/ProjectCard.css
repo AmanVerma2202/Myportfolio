@@ -3,10 +3,10 @@
   display: flex;
 }
 .project-card {
-  background: #292828;
-  border-radius: 15px;
-  border: gray solid 1.5px;
-  box-shadow: 0 2px 5px rgb(144, 144, 144);
+  background: linear-gradient(135deg, var(--page-panel-strong), var(--page-panel));
+  border-radius: 8px;
+  border: 1px solid var(--page-line);
+  box-shadow: 0 20px 55px var(--page-shadow);
   font-family: "Poppins", sans-serif;
   padding: 20px;
   margin: 10px;
@@ -17,8 +17,9 @@
 
 .user-picture {
   width: 100%;
-  height: 350px;
-  border-radius: 10px;
+  aspect-ratio: 16 / 10;
+  height: auto;
+  border-radius: 8px;
   overflow: hidden;
   margin-bottom: 20px;
 }
@@ -32,23 +33,25 @@
 
 .projectTitle {
   font-size: 1.5rem;
-  color: #9ee406;
+  color: var(--page-accent);
   text-align: center;
 }
 
 .projectDes {
   display: block;
   font-size: 20px;
-  color: rgb(170, 166, 166);
+  color: var(--page-muted);
   margin-top: 20px;
+  line-height: 1.55;
 }
 
 .ProjectFooter {
   display: flex;
-    justify-content: space-between ;
-    align-items: center;
-    margin-top: 20px;
-    gap:80px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .ProjectFooter a {
@@ -59,7 +62,7 @@
 .ProjectFooter svg {
   width: 40px;
   height: 40px;
-  fill: #9ee406;
+  fill: var(--page-accent);
 }
 
 
@@ -71,7 +74,7 @@
   margin-left: -7px;
   border: gray solid 1.5px;
   border-radius: 50%;
-  background-color: black;
+  background-color: var(--page-bg);
 }
 
 /* Tooltip styles */
@@ -118,7 +121,8 @@
   }
 
   .ProjectFooter {
-    gap: 20px;
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .project-icons img {
@@ -134,11 +138,7 @@
 
   .project-card {
     margin: 5px;
-    padding: 0px !important;
-  }
-
-  .user-picture {
-    height: 150px;
+    padding: 12px !important;
   }
 
   .projectTitle {
@@ -150,7 +150,7 @@
   }
 
   .ProjectFooter{
-    gap: 50px;
+    gap: 14px;
   }
   .ProjectFooter svg {
     width: 24px;

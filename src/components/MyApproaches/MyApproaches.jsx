@@ -1,64 +1,67 @@
-import React from 'react'
-import "./MyApproaches.css"
+import React from "react";
+import { FiBarChart2, FiGitBranch, FiLayers, FiSearch } from "react-icons/fi";
+import "./MyApproaches.css";
+
+const steps = [
+  {
+    number: "01",
+    title: "Diagnose the business problem",
+    text: "I start by mapping the users, workflow, success metric, and technical risk. This keeps the build focused on outcomes instead of just features.",
+    icon: <FiSearch />,
+  },
+  {
+    number: "02",
+    title: "Architect the product path",
+    text: "I choose the right stack, data model, API boundaries, and AI/automation layer so the product can grow without becoming messy.",
+    icon: <FiLayers />,
+  },
+  {
+    number: "03",
+    title: "Ship usable increments",
+    text: "I build clean interfaces, reliable backend flows, auth, integrations, and dashboards in short loops so stakeholders can review real progress.",
+    icon: <FiGitBranch />,
+  },
+  {
+    number: "04",
+    title: "Measure, polish, and harden",
+    text: "I tune performance, responsive behavior, accessibility, deployment readiness, and maintainability before calling the work complete.",
+    icon: <FiBarChart2 />,
+  },
+];
+
 const MyApproaches = () => {
   return (
-    <div className='container-body'>
-       <h1>How I<span style={{color:"#9ee406"}}> Approach</span></h1>
-      <div className="container-app">
-
-        <div className="card-app">
-          <div className="slide slide1">
-            <div className="content-app">
-              <div className="icon-app">
-                <div className='fa'>Strategic Website Architecture and Workflow Design</div>
-                
-              </div>
-            </div>
-          </div>
-          <div className="slide slide2">
-            <div className="content-app">
-              <p>I begin by thoroughly analyzing your website's goals, target audience, and key functionalities. After observing the provided requirements and understanding the core problem, I collaborate with you to design an innovative architecture and optimized workflow. My focus is on creating a seamless site structure, intuitive navigation, and content strategy that aligns perfectly with your vision and user needs.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-app">
-          <div className="slide slide1">
-            <div className="content-app">
-              <div className="icon-app">
-                <div className='fa'>Bringing Ideas to Life Through Code</div>
-                
-              </div>
-            </div>
-          </div>
-          <div className="slide slide2">
-            <div className="content-app">
-              
-              <p>Once we align on the plan, I set the mood with my playlist and dive into the coding process. From the initial wireframes to the final polished code, I keep you updated every step of the way, turning your vision into reality one line at a time.</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="card-app">
-          <div className="slide slide1">
-            <div className="content-app">
-              <div className="icon-app">
-                <div className='fa'>Crafting the Core of WebApp(Deployment)</div>
-              </div>
-            </div>
-          </div>
-          <div className="slide slide2">
-            <div className="content-app">
-              
-              <p>This is where the magic truly happens! With the approved design as my blueprint, I bring it to life through functional code, meticulously building your website from the ground up. Every line of code is carefully crafted to ensure your vision becomes a seamless and dynamic digital experience.</p>
-            </div>
-          </div>
-        </div>
+    <section className="approach-section" aria-labelledby="approach-title">
+      <div className="approach-header">
+        <p>Operating System</p>
+        <h2 id="approach-title">How I take an idea from unclear to shipped.</h2>
       </div>
 
+      <div className="approach-layout">
+        <aside className="approach-manifesto">
+          <span>AI + Full Stack</span>
+          <h3>My edge is not only writing code. It is turning ambition into a working product with calm engineering judgment.</h3>
+          <p>
+            For high-profile roles and serious freelance projects, I focus on business clarity,
+            strong architecture, fast execution, and details that survive real users.
+          </p>
+        </aside>
 
-    </div>
-  )
-}
+        <div className="approach-steps">
+          {steps.map((step) => (
+            <article className="approach-card" key={step.number}>
+              <div className="approach-card-top">
+                <span className="approach-number">{step.number}</span>
+                <span className="approach-icon" aria-hidden="true">{step.icon}</span>
+              </div>
+              <h3>{step.title}</h3>
+              <p>{step.text}</p>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default MyApproaches
+export default MyApproaches;

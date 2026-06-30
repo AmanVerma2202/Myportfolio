@@ -1,9 +1,62 @@
+:root {
+  --page-bg: #060807;
+  --page-bg-soft: #101411;
+  --page-panel: rgba(18, 23, 20, 0.86);
+  --page-panel-strong: rgba(24, 30, 26, 0.96);
+  --page-text: #f7faf6;
+  --page-muted: #aeb8ad;
+  --page-soft: #dbe4d7;
+  --page-line: rgba(255, 255, 255, 0.12);
+  --page-accent: #9ee406;
+  --page-accent-2: #28d4ff;
+  --page-accent-3: #ffb86c;
+  --page-shadow: rgba(0, 0, 0, 0.38);
+  --page-chip: rgba(158, 228, 6, 0.11);
+  --page-chip-border: rgba(158, 228, 6, 0.26);
+}
+
+body.portfolio-light-mode {
+  --page-bg: #f7f4ec;
+  --page-bg-soft: #eef5f1;
+  --page-panel: rgba(255, 255, 255, 0.78);
+  --page-panel-strong: rgba(255, 255, 255, 0.96);
+  --page-text: #111711;
+  --page-muted: #536153;
+  --page-soft: #263126;
+  --page-line: rgba(17, 23, 17, 0.14);
+  --page-accent: #31780b;
+  --page-accent-2: #007f9f;
+  --page-accent-3: #a45618;
+  --page-shadow: rgba(38, 45, 35, 0.16);
+  --page-chip: rgba(49, 120, 11, 0.1);
+  --page-chip-border: rgba(49, 120, 11, 0.22);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-left: 90px;
   margin-right: 90px;
-  background-color: rgb(4, 4, 4);
-  color: white;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background:
+    radial-gradient(circle at 90% 5%, color-mix(in srgb, var(--page-accent-2) 15%, transparent), transparent 30rem),
+    linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 52%, var(--page-bg) 100%);
+  color: var(--page-text);
+  font-family: Arial, Helvetica, sans-serif;
+  transition: background 240ms ease, color 240ms ease;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
 }
 
 @media (max-width: 768px) { /* Adjust breakpoint as needed */
@@ -19,7 +72,5 @@ body {
     margin-right: 5px;
   }
 }
-
-
 
 

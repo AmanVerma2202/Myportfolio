@@ -4,8 +4,7 @@
   width: 100%;
   margin-top: 150px;
   margin-bottom: 20px;
-
-  color: white;
+  color: var(--page-text);
   text-align: center;
 }
 
@@ -46,7 +45,7 @@
 }
 
 .footers-heading .highlight {
-  color: #9ee406;
+  color: var(--page-accent);
 }
 
 .footers-text {
@@ -55,6 +54,7 @@
   font-weight: 400;
   margin-bottom: 20px;
   line-height: 1.8;
+  color: var(--page-muted);
 }
 
 /* Magic Button */
@@ -63,8 +63,8 @@
   align-items: center;
   gap: 10px;
   padding: 10px 20px;
-  background-color: #9ee406;
-  color: black;
+  background-color: var(--page-accent);
+  color: var(--page-bg);
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -75,7 +75,7 @@
 
 .magic-button:hover {
   transform: scale(1.05);
-  background-color: #7caf02;
+  filter: brightness(0.94);
 }
 
 .magic-button.right-icon svg {
@@ -97,7 +97,7 @@
   justify-content: center;
   align-items: center;
   font-size: 20px ;
-  color: #cfcfcf;
+  color: var(--page-muted);
 
 }
 
@@ -145,11 +145,10 @@
   height: 50px;
   width: 50px;
   font-family: 'Titillium Web', sans-serif;
-  color: #333;
-  border: gray solid 1.5px;
-
+  color: var(--page-soft);
+  border: 1px solid var(--page-line);
   border-radius: 10px;
-  background: #000000;
+  background: var(--page-panel);
   margin: 5px;
   transition: 0.3s;
   justify-content: center;
@@ -161,7 +160,7 @@
 }
 
 .social-btn span {
-  color: white;
+  color: var(--page-text);
   width: 0px;
   overflow: hidden;
   transition: 0.3s;
@@ -169,7 +168,7 @@
   margin-left: 5px;
 }
 .social-btn span a{
-  color:white;
+  color: var(--page-text);
 }
 
 .social-btn:hover {
@@ -191,7 +190,7 @@
 }
 
 #github {
-  fill: #ffffff;
+  fill: var(--page-text);
 }
 #insta svg{
   height: 32px;

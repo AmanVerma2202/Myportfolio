@@ -6,23 +6,31 @@ import DeveloperCard from "./DeveloperCard";
 const Experience = () => {
   return (
 
-    <div className="exper">
-      <h1>My <span style={{color:"#9ee406"}}>Experiences</span></h1>
+    <section className="exper" aria-labelledby="experience-title">
+      <div className="experience-heading">
+        <p>Career Timeline</p>
+        <h1 id="experience-title">Experience built around <span>Infosys</span>.</h1>
+      </div>
       <div className="exp" >
       
-      {workExperience.map((card, index) => (
+      {workExperience.map((card) => (
 
           <DeveloperCard 
           key={card.id} 
-          title={card.title} 
+          role={card.role}
+          company={card.company}
+          type={card.type}
+          period={card.period}
+          focus={card.focus}
           description={card.desc} 
+          highlights={card.highlights}
           imageUrl={card.thumbnail} 
         />
 
 
       ))}
     </div>
-    </div>
+    </section>
     
   );
 };
