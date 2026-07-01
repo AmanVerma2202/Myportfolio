@@ -20,8 +20,8 @@
     display: grid;
     border-radius: 50%;
     -webkit-mask: radial-gradient(farthest-side, #0000 40%, #000 41%);
-    background: linear-gradient(0deg, #456501 50%, #9ee406 0) center/4px 100%, /* Light green */
-              linear-gradient(90deg, #3d5901 50%, #639101 0) center/100% 4px;
+    background: linear-gradient(0deg, color-mix(in srgb, var(--page-accent) 50%, transparent) 50%, var(--page-accent) 0) center/4px 100%,
+              linear-gradient(90deg, color-mix(in srgb, var(--page-accent) 40%, transparent) 50%, color-mix(in srgb, var(--page-accent) 60%, transparent) 0) center/100% 4px;
     background-repeat: no-repeat;
     animation: s3 1s infinite steps(12);
   }

@@ -1,5 +1,7 @@
 .projects-section {
-  padding: 20px;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 .projects-section h1 {
@@ -10,7 +12,7 @@
 }
 
 .projects-section h1 span {
-  color: #9ee406;
+  color: var(--page-accent);
 }
 
 .projects-grid {

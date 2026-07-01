@@ -1,5 +1,7 @@
 .approach-section {
-  margin: clamp(5rem, 10vw, 9rem) 0;
+  max-width: 1220px;
+  margin: clamp(5rem, 10vw, 9rem) auto;
+  padding: 0 24px;
 }
 
 .approach-header {

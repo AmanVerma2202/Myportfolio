@@ -30,7 +30,7 @@ const Footer = () => {
       </div>
 
       <div className="footers-bottom">
-        <p className="footers-author"><span style={{color:"#9ee406"}}>~</span><Name fontSize={18}/></p>
+        <p className="footers-author"><span style={{color:"var(--page-accent)"}}>~</span><Name fontSize={18}/></p>
         <div className="social-media-links">
             <div className="social-links">
 		            <div id="twitter" className="social-btn flex-center">

@@ -5,7 +5,7 @@ import Time from './Timeline'
 const Education = () => {
   return (
     <div className='education'>
-      <h1>My <span style={{color:"#9ee406"}}>Education</span></h1>
+      <h1>My <span style={{color:"var(--page-accent)"}}>Education</span></h1>
       <div className='time'>
         <Time/>
       </div>

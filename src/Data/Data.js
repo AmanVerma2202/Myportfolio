@@ -16,6 +16,19 @@ import git from "../Image/github.svg"
 import ts from "../Image/ts.svg"
 import redux from "../Image/redux.svg"
 import spreadsheet from "../Image/spreadsheets.svg"
+import numpy from "../Image/numpy.svg"
+import matplotlib from "../Image/matplotlib.svg"
+import seaborn from "../Image/seaborn.svg"
+import pandas from "../Image/pandas.svg"
+import pytorch from "../Image/pytorch.svg"
+import AI from "../Image/AI.svg"
+import genai from "../Image/genai.svg"
+
+
+
+
+
+
 
 import aman from "../Image/amanY.jpeg"
 import sanskruti from "../Image/sanskruti.jpeg"
@@ -152,21 +165,21 @@ export const testimonials = [
       "I had the pleasure of collaborating with Aman on two projects, Aggregate and RJ Snack. His expertise as a web developer stood out from day one. Aman brought incredible technical skills to the table, especially in Reactjs and javascript, and their ability to solve complex problems ensured the success of both projects.he is not only a skilled developer but also a great team player and an excellent teacher from whom I have learned many things and will continue to learn.",
     name: "Sanskruti Mansoriya",
     image:sanskruti,
-    title: "TCS",
+    title: "SDE at Infosys",
   },
   {
     quote:
       "I’ve had the privilege of knowing Aman Verma since our school days, and he has always been a standout individual. His sincerity and honesty form the foundation of his exceptional character. Aman is highly intelligent, hardworking, and approaches every task with unwavering dedication.What truly sets Aman apart is his commitment to excellence and his ability to consistently deliver high-quality results. He’s incredibly professional, responsive, and ensures that every project he undertakes reflects his passion for development.If you’re looking for someone who combines integrity, intellect, and an unmatched work ethic, Aman Verma is the ideal person to collaborate with.",
     name: "Aman Yadav",
     image:aman,
-    title: "SDE Intern,Ultimate Kronos Group",
+    title: "SDE at Ultimate Kronos Group",
   },
   {
     quote:
       "I've known Aman Verma since our school days, and his dedication and work ethic have always stood out.He’s incredibly professional, quick to respond, and genuinely invested in delivering great results. His passion for development shines through in everything he does. If you’re looking for someone who truly cares about elevating your website and brand, Aman is the perfect choice.",
     name: "Akshaya Pratap Singh",
     image:akshaya,
-    title: "Samsung(Upcoming SDE)",
+    title: "Ex-Rippling, Ex-Samsung",
   },
   {
     quote:
@@ -180,7 +193,7 @@ export const testimonials = [
       "Working with Aman was like catching lightning in a bottle! His innovative ideas and unstoppable enthusiasm turned our project into an exciting journey rather than just a task to complete. From late-night brainstorming sessions to perfecting the final details, he brought a spark that ignited the whole team. If you're looking for someone who can elevate your project from ordinary to extraordinary, Aman is the creative powerhouse you need by your side.",
     name: "Pratyaksh Roy",
     image:pratyaksh,
-    title: "Ex-ML Engineer Intern,Sarvam",
+    title: "AI Scientist at Solventum, Ex-Klarity, Ex-Sarvam",
   },
 ];
 
@@ -278,38 +291,44 @@ export const skill = [
   {
     id: 16,
     name: "NumPy",
-    img: python,
+    img: numpy,
     nameImg: "NumPy",
   },
   {
     id: 17,
     name: "Pandas",
-    img: python,
+    img: pandas,
     nameImg: "Pandas",
   },
   {
     id: 18,
     name: "Matplotlib",
-    img: python,
+    img: matplotlib,
     nameImg: "Matplotlib",
   },
   {
     id: 19,
     name: "PyTorch",
-    img: python,
+    img: pytorch,
     nameImg: "PyTorch",
   },
   {
     id: 20,
     name: "Seaborn",
-    img: python,
+    img: seaborn,
     nameImg: "Seaborn",
   },
   {
     id: 21,
     name: "AI Automation",
-    img: python,
+    img: AI,
     nameImg: "AI Automation",
+  },
+  {
+    id: 22,
+    name: "Generative AI",
+    img: genai,
+    nameImg: "Generative AI",
   },
 ];
 

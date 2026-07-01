@@ -3,40 +3,40 @@
 }
 
 :root {
-  --page-bg: #060807;
-  --page-bg-soft: #101411;
-  --page-panel: rgba(18, 23, 20, 0.86);
-  --page-panel-strong: rgba(24, 30, 26, 0.96);
-  --page-text: #f7faf6;
-  --page-muted: #aeb8ad;
-  --page-soft: #dbe4d7;
-  --page-line: rgba(255, 255, 255, 0.12);
+  --page-bg: #08090c;
+  --page-bg-soft: #0e1016;
+  --page-panel: rgba(18, 20, 28, 0.8);
+  --page-panel-strong: rgba(24, 27, 36, 0.94);
+  --page-text: #e4e6eb;
+  --page-muted: #8b919e;
+  --page-soft: #c4c8d0;
+  --page-line: rgba(228, 230, 235, 0.07);
   --page-accent: #9ee406;
-  --page-accent-2: #28d4ff;
-  --page-accent-3: #ffb86c;
-  --page-shadow: rgba(0, 0, 0, 0.38);
-  --page-chip: rgba(158, 228, 6, 0.11);
-  --page-chip-border: rgba(158, 228, 6, 0.26);
+  --page-accent-2: #3b82f6;
+  --page-accent-3: #f59e0b;
+  --page-shadow: rgba(0, 0, 0, 0.45);
+  --page-chip: rgba(158, 228, 6, 0.08);
+  --page-chip-border: rgba(158, 228, 6, 0.2);
 }
 
 body.portfolio-light-mode {
-  --page-bg: #f7f4ec;
-  --page-bg-soft: #eef5f1;
-  --page-panel: rgba(255, 255, 255, 0.78);
-  --page-panel-strong: rgba(255, 255, 255, 0.96);
-  --page-text: #111711;
-  --page-muted: #536153;
-  --page-soft: #263126;
-  --page-line: rgba(17, 23, 17, 0.14);
-  --page-accent: #31780b;
-  --page-accent-2: #007f9f;
-  --page-accent-3: #a45618;
-  --page-shadow: rgba(38, 45, 35, 0.16);
-  --page-chip: rgba(49, 120, 11, 0.1);
-  --page-chip-border: rgba(49, 120, 11, 0.22);
+  --page-bg: #f3f0eb;
+  --page-bg-soft: #e8e4dd;
+  --page-panel: rgba(255, 255, 255, 0.75);
+  --page-panel-strong: rgba(255, 255, 255, 0.94);
+  --page-text: #1a1c23;
+  --page-muted: #6b7180;
+  --page-soft: #2c2f38;
+  --page-line: rgba(26, 28, 35, 0.1);
+  --page-accent: #4a8c0a;
+  --page-accent-2: #2563eb;
+  --page-accent-3: #d97706;
+  --page-shadow: rgba(38, 40, 48, 0.12);
+  --page-chip: rgba(74, 140, 10, 0.08);
+  --page-chip-border: rgba(74, 140, 10, 0.2);
   background:
-    linear-gradient(180deg, #f6f3eb 0%, #edf7f3 48%, #f8faf7 100%);
-  color: #101511;
+    linear-gradient(180deg, #f3f0eb 0%, #ece7df 50%, #f5f2ec 100%);
+  color: #1a1c23;
 }
 
 html {
@@ -44,14 +44,15 @@ html {
 }
 
 body {
-  margin-left: 90px;
-  margin-right: 90px;
-  padding-top: 65px;
+  margin: 0;
+  padding: 65px 0 0;
   background:
-    radial-gradient(circle at 90% 5%, color-mix(in srgb, var(--page-accent-2) 15%, transparent), transparent 30rem),
-    linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 52%, var(--page-bg) 100%);
+    radial-gradient(circle at 92% 3%, color-mix(in srgb, var(--page-accent-2) 12%, transparent), transparent 32rem),
+    linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 50%, var(--page-bg) 100%);
   color: var(--page-text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   transition: background 240ms ease, color 240ms ease;
 }
 
@@ -60,25 +61,15 @@ button,
 input,
 textarea,
 select {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
 a {
   color: inherit;
+  text-decoration: none;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
-  body {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
+::selection {
+  background: color-mix(in srgb, var(--page-accent) 30%, transparent);
+  color: var(--page-text);
 }
-
-@media (max-width: 480px) { /* Adjust breakpoint as needed */
-  body {
-    margin-left: 5px;
-    margin-right: 5px;
-  }
-}
-
-

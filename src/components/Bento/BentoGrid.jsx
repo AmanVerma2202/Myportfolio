@@ -53,7 +53,6 @@ const BentoGrid = () => {
       area: "focus",
       kicker: "Best Fit",
       title: "AI-enabled SaaS, dashboards, internal tools, e-commerce, and automation-heavy platforms.",
-      image: techstack,
       icon: <FiTarget />,
     },
     {

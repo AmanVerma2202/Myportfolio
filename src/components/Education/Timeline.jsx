@@ -16,10 +16,9 @@ export default function Time() {
     <Timeline position="alternate">
       <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          sx={{ m: 'auto 0', color: 'var(--page-accent)' }}
           align="right"
           variant="body2"
-          color="#9ee406"
         >
           2021 - 2025
         </TimelineOppositeContent>
@@ -40,9 +39,8 @@ export default function Time() {
 
       <TimelineItem>
         <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          sx={{ m: 'auto 0', color: 'var(--page-accent)' }}
           variant="body2"
-          color="#9ee406"
         >
           2019 - 2020
         </TimelineOppositeContent>
@@ -63,9 +61,8 @@ export default function Time() {
 
       <TimelineItem>
       <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
+          sx={{ m: 'auto 0', color: 'var(--page-accent)' }}
           variant="body2"
-          color="#9ee406"
         >
           2017 - 2018
         </TimelineOppositeContent>

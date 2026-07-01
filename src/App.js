@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css';
-import Header from './components/Header/Header';
 import Loader from './components/Loader/Loader';
 import Navbar from './components/Nav/Navbar';
 import About from './components/About/About';
@@ -28,7 +27,6 @@ function App() {
         <Loader/>
       ) : (
         <div className="app-content">
-          <Header/>
           <Profile/>
           <About/>
           <BentoGrid/>

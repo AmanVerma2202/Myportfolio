@@ -7,7 +7,7 @@ const Projects = () => {
   return (
     <section id="projects" className="projects-section">
       <h1>
-        Selected <span style={{ color: "#9ee406" }}>Projects</span>
+        Selected <span style={{ color: "var(--page-accent)" }}>Projects</span>
       </h1>
       <div className="projects-grid">
         {projects.map((project) => (

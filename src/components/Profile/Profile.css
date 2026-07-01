@@ -1,40 +1,40 @@
 .profile {
-  --profile-bg: #050706;
-  --profile-panel: rgba(14, 18, 16, 0.82);
-  --profile-panel-strong: rgba(20, 26, 23, 0.94);
-  --profile-text: #ffffff;
-  --profile-muted: #aeb8ad;
-  --profile-soft: #dbe4d7;
-  --profile-line: rgba(255, 255, 255, 0.12);
-  --profile-subtle: rgba(255, 255, 255, 0.06);
+  --profile-bg: #07080c;
+  --profile-panel: rgba(14, 16, 24, 0.82);
+  --profile-panel-strong: rgba(20, 23, 32, 0.94);
+  --profile-text: #e8eaed;
+  --profile-muted: #8b919e;
+  --profile-soft: #c4c8d0;
+  --profile-line: rgba(232, 234, 237, 0.08);
+  --profile-subtle: rgba(232, 234, 237, 0.05);
   --profile-accent: #9ee406;
-  --profile-accent-2: #28d4ff;
-  --profile-shadow: rgba(0, 0, 0, 0.42);
-  --profile-chip: rgba(158, 228, 6, 0.1);
-  --profile-chip-border: rgba(158, 228, 6, 0.25);
+  --profile-accent-2: #3b82f6;
+  --profile-shadow: rgba(0, 0, 0, 0.45);
+  --profile-chip: rgba(158, 228, 6, 0.08);
+  --profile-chip-border: rgba(158, 228, 6, 0.2);
   position: relative;
   width: 100%;
   min-height: calc(100vh - 80px);
-  padding: clamp(1.5rem, 4vw, 3rem) 0 clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 4vw, 3rem) 24px clamp(2rem, 5vw, 4rem);
   color: var(--profile-text);
   overflow: hidden;
   isolation: isolate;
 }
 
 .profile-light {
-  --profile-bg: #f7f3e8;
+  --profile-bg: #f3f0eb;
   --profile-panel: rgba(255, 255, 255, 0.74);
   --profile-panel-strong: rgba(255, 255, 255, 0.94);
-  --profile-text: #111711;
-  --profile-muted: #526052;
-  --profile-soft: #263126;
-  --profile-line: rgba(17, 23, 17, 0.14);
-  --profile-subtle: rgba(17, 23, 17, 0.055);
-  --profile-accent: #31780b;
-  --profile-accent-2: #007f9f;
-  --profile-shadow: rgba(41, 49, 38, 0.16);
-  --profile-chip: rgba(49, 120, 11, 0.1);
-  --profile-chip-border: rgba(49, 120, 11, 0.22);
+  --profile-text: #1a1c23;
+  --profile-muted: #6b7180;
+  --profile-soft: #2c2f38;
+  --profile-line: rgba(26, 28, 35, 0.1);
+  --profile-subtle: rgba(26, 28, 35, 0.045);
+  --profile-accent: #4a8c0a;
+  --profile-accent-2: #2563eb;
+  --profile-shadow: rgba(38, 40, 48, 0.12);
+  --profile-chip: rgba(74, 140, 10, 0.08);
+  --profile-chip-border: rgba(74, 140, 10, 0.2);
 }
 
 .profile::before {

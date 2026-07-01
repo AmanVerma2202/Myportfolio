@@ -74,7 +74,7 @@ const Profile = () => {
         <div className="profile-topbar">
           <div className="availability-chip">
             <span aria-hidden="true"></span>
-            Full-time Infosys AI automation | Remote + NCR ready
+            Full-time Infosys AI automation | Hybrid
           </div>
 
           <button
@@ -141,7 +141,7 @@ const Profile = () => {
             <div className="experience-strip">
               <span>Infosys</span>
               <strong>Software Engineer - AI and Automation</strong>
-              <small>Full-time | Remote/NCR flexible</small>
+              <small>Full-time </small>
             </div>
 
             <div className="proof-grid">

@@ -7,7 +7,7 @@ const Testimonials = () => {
   return (
     <div id="testimonials" className="infinite-cards-container">
       <h1>
-      Warm words from <span style={{ color: "#9ee406" }}>grateful Peers</span>
+      Warm words from <span style={{ color: "var(--page-accent)" }}>grateful Peers</span>
       </h1>
       <Marquee gradient={false} speed={65} pauseOnHover={true}>
         {testimonials.map((testimonial, index) => (

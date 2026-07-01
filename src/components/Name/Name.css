@@ -9,6 +9,6 @@
 
 
 .name{
-  color: #9ee406;
+  color: var(--page-accent);
   margin: 20px;
 }
