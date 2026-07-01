@@ -12,7 +12,6 @@ import { Earth } from "./Earth";
 import { ContentCard } from "./ContentCard";
 import b1 from "../../Image/b1.jpg";
 import b5 from "../../Image/b5.jpg";
-import techstack from "../../Image/b6.jpg";
 import b8 from "../../Image/b8.jpg";
 
 const BentoGrid = () => {
