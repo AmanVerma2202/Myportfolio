@@ -5,7 +5,7 @@ import "./Testimonials.css";
 
 const Testimonials = () => {
   return (
-    <div className="infinite-cards-container">
+    <div id="testimonials" className="infinite-cards-container">
       <h1>
       Warm words from <span style={{ color: "#9ee406" }}>grateful Peers</span>
       </h1>

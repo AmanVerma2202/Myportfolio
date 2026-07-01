@@ -107,28 +107,6 @@
   gap: 20px;
 }
 
-/* .social-icon {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 8px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-} */
-
-/* .social-icon img {
-  width: 20px;
-  height: 20px;
-}
-
-.social-icon:hover {
-  background-color: #4f46e5;
-  transform: scale(1.1);
-} */
-
-
 /* From Uiverse.io by Pradeepsaranbishnoi */ 
 .social-links,.flex-center {
   display: flex;
@@ -220,13 +198,4 @@
     gap: 10px;
   }
 
-  /* .social-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .social-icon img {
-    width: 18px;
-    height: 18px;
-  } */
 }

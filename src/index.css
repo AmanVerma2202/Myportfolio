@@ -1,3 +1,7 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 :root {
   --page-bg: #060807;
   --page-bg-soft: #101411;
@@ -30,6 +34,9 @@ body.portfolio-light-mode {
   --page-shadow: rgba(38, 45, 35, 0.16);
   --page-chip: rgba(49, 120, 11, 0.1);
   --page-chip-border: rgba(49, 120, 11, 0.22);
+  background:
+    linear-gradient(180deg, #f6f3eb 0%, #edf7f3 48%, #f8faf7 100%);
+  color: #101511;
 }
 
 html {
@@ -39,6 +46,7 @@ html {
 body {
   margin-left: 90px;
   margin-right: 90px;
+  padding-top: 65px;
   background:
     radial-gradient(circle at 90% 5%, color-mix(in srgb, var(--page-accent-2) 15%, transparent), transparent 30rem),
     linear-gradient(180deg, var(--page-bg) 0%, var(--page-bg-soft) 52%, var(--page-bg) 100%);

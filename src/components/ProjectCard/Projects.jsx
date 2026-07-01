@@ -5,7 +5,7 @@ import "./Projects.css";
 
 const Projects = () => {
   return (
-    <section className="projects-section">
+    <section id="projects" className="projects-section">
       <h1>
         Selected <span style={{ color: "#9ee406" }}>Projects</span>
       </h1>

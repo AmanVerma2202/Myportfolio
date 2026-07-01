@@ -5,7 +5,7 @@ import {skill} from "../../Data/Data"
 const Skills = () => {
 
   return (
-    <div className="cards-container">
+    <div id="skills" className="cards-container">
       <h1>
         Skills I <span style={{ color: "#9ee406" }}>Use</span>
       </h1>

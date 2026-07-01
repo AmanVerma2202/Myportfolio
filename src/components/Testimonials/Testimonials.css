@@ -1,46 +1,39 @@
-/* Container Styles */
 .infinite-cards-container {
   width: 100%;
-  overflow: hidden; /* Prevents content from spilling out */
-  background-color: black;
+  overflow: hidden;
+  background-color: var(--page-bg);
   padding: 20px 0;
   margin-top: 90px;
-  
 }
 
 .infinite-cards-container h1{
   font-size: 60px;
   margin-bottom:90px;
-
 }
 
-/* Marquee Slider */
 .infinite-cards-slider {
   display: flex;
   justify-content: flex-start;
-  align-items: stretch; /* Ensures cards have equal height */
+  align-items: stretch;
 }
 
-/* Individual Card Styles */
 .infinite-card {
   width: 580px;
   min-height: 380px;
-  background: #2a2a2a;
+  background: var(--page-panel);
   border-radius: 10px;
-  border: gray solid 1.5px;
-  color: white;
+  border: 1px solid var(--page-line);
+  color: var(--page-text);
   padding: 20px;
   margin: 0 15px;
   text-align: center;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px var(--page-shadow);
   transition: transform 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures spacing between elements */
+  justify-content: space-between;
 }
 
-
-/* Image Styles */
 .infinite-card-image {
   width: 90px;
   height: 90px;
@@ -50,61 +43,59 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Text Styles */
 .infinite-card-message {
   font-size: 14px;
-  line-height: 1.6; /* Improves readability for longer text */
-  color: #ccc;
+  line-height: 1.6;
+  color: var(--page-muted);
 }
 
 .infinite-card-name {
   font-size: 17px;
   font-weight: bold;
-  color: #fff;
+  color: var(--page-text);
 }
 
 .infinite-card-title {
   padding-top: 15px;
   font-size: 15px;
-  color: #9ee406;
+  color: var(--page-accent);
 }
 
 .infinite-card-quote {
   font-size: 15px;
   line-height: 1.8;
-  color: #aaa;
+  color: var(--page-muted);
 }
 
 .nameTitle{
   min-height: 50px;
 }
 
-/* For Medium Screens (Tablets) */
 @media (max-width: 768px) {
   .infinite-cards-container {
     padding: 15px 0;
   }
 
   .infinite-cards-slider {
-    flex-wrap: nowrap; /* Keeps the horizontal scrolling */
+    flex-wrap: nowrap;
     gap: 10px;
   }
 
   .infinite-card {
-    width: 400px; /* Smaller card width */
-    min-height: 320px; /* Adjusted height */
-    padding: 15px; /* Reduced padding */
+    width: 400px;
+    min-height: 320px;
+    padding: 15px;
     margin: 0 10px;
   }
 
   .infinite-card-image {
-    width: 70px; /* Adjust image size */
+    width: 70px;
     height: 70px;
   }
 
   .infinite-card-message {
-    font-size: 13px; /* Slightly smaller text */
-    line-height: 1.5; /* Maintains readability */
+    font-size: 13px;
+    line-height: 1.5;
   }
 
   .infinite-card-name {
@@ -120,11 +111,10 @@
   }
 
   .nameTitle {
-    min-height: 45px; /* Adjust spacing */
+    min-height: 45px;
   }
 }
 
-/* For Small Screens (Mobile) */
 @media (max-width: 480px) {
   .infinite-cards-container {
     padding: 10px 0;
@@ -136,25 +126,25 @@
   }
 
   .infinite-cards-slider {
-    flex-wrap: nowrap; /* Keeps scrolling consistent */
-    gap: 10px; /* Slightly smaller gap */
+    flex-wrap: nowrap;
+    gap: 10px;
   }
 
   .infinite-card {
-    width: 300px; /* Use most of the screen width */
-    min-height: 440px; /* Adjust height */
+    width: 300px;
+    min-height: 440px;
     padding: 10px;
-    margin: 0 10px; /* Center card with smaller margins */
+    margin: 0 10px;
   }
 
   .infinite-card-image {
-    width: 60px; /* Smaller image */
+    width: 60px;
     height: 60px;
   }
 
   .infinite-card-message {
     font-size: 12px;
-    line-height: 1.4; /* Compact line spacing */
+    line-height: 1.4;
   }
 
   .infinite-card-name {
@@ -170,6 +160,6 @@
   }
 
   .nameTitle {
-    min-height: 40px; /* Adjust height for tighter spacing */
+    min-height: 40px;
   }
 }

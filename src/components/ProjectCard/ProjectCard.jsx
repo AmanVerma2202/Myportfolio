@@ -1,41 +1,6 @@
 import React from "react";
 import "./ProjectCard.css";
 
-// const MagicButton = ({ title, icon, position }) => {
-//   return (
-//     <button className={`magic-button ${position === "right" ? "right-icon" : ""}`}>
-//       {title}
-//       {icon}
-//     </button>
-//   );
-// };
-
-// const ProjectCard = ({ img, title, des, iconLists, link, git }) => {
-//   return (
-//     <div className="project-card">
-//       <img src={img} alt={`${title} Thumbnail`} className="project-thumbnail" />
-//       <h3>{title}</h3>
-//       <p>{des}</p>
-//       <div className="project-footer">
-//         <div className="project-icons">
-//           {iconLists.map((icon, index) => (
-//             <img key={index} src={icon} alt="Tech" />
-//           ))}
-//         </div>
-//         <a href={link} target="_blank" rel="noopener noreferrer" >
-//           <MagicButton title="Check live site" icon={<FaLocationArrow />} position="right" />
-//         </a>
-//         <a href={git} target="_blank" rel="noopener noreferrer" className="github-btn">
-//           GitHub
-//         </a>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ProjectCard;
-
-
 const ProjectCard = ({ img, title, des, iconLists, link, git }) => {
   return (
     <div className="project-card">
